@@ -38,7 +38,7 @@ Is your `Downloads` folder a digital graveyard of forgotten files? This script i
 ├── cat_video.mp4
 └── report.docx
 
-**After Running `./organize.sh ~/Downloads`:**
+**After Running `./file_organizer.sh ~/Downloads`:**
 
 ~/Downloads
 ├── 📂 Archives
