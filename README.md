@@ -61,11 +61,11 @@ Is your `Downloads` folder a digital graveyard of forgotten files? This script i
     ```
 2.  **Pick a script and make it executable:**
     ```bash
-    chmod +x file-organizer/organize.sh
+    chmod +x file_organizer.sh
     ```
 3.  **Run it:**
     ```bash
-    ./file-organizer/organize.sh /path/to/your/messy/folder
+     ./file_organizer.sh /path/to/your/messy/folder
     ```
 
 ### 💡 Got a Script?
