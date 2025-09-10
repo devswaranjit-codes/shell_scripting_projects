@@ -2,7 +2,7 @@
 
 
 echo "Enter the directory path to organize:"
-read DIR
+DIR="$1"
 
 if [[ ! -d "$DIR" ]];
 then
