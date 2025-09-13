@@ -1,15 +1,17 @@
 #!/bin/bash
 
+
 add_user() {
-	read -p "enter username to add:"username
-	read -p "enter password for "$username": "passwd
-	if id"$username" &>  dev/null; then
-		echo  "user "$username" already exists.."
-	else
-		sudo useradd -m "$username"
-		sudo passwd "$passwd"
-		echo " "$username"user created successfully"
-	fi
+    read -p "Enter username to add: " username
+    read -p "Enter password for $username: " passwd
+    echo
+    if id "$username" &>/dev/null; then
+        echo "User $username already exists."
+    else
+        sudo useradd -m "$username"
+        echo "$username:$passwd" | sudo chpasswd
+        echo "User $username created successfully."
+    fi
 }
 
 delete_user()  {
